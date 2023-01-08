@@ -1,18 +1,13 @@
 {
   "files": {
-    "main.css": "/capstone/static/css/main.8e6623cf.css",
-    "main.js": "/capstone/static/js/main.ae4cf271.js",
-    "static/media/Quattrocento-Bold.ttf": "/capstone/static/media/Quattrocento-Bold.ed26827e1ecdb8a9bf3e.ttf",
-    "static/media/Quattrocento-Regular.ttf": "/capstone/static/media/Quattrocento-Regular.3d1b0443d0ee295dc542.ttf",
-    "static/media/Alata-Regular.ttf": "/capstone/static/media/Alata-Regular.a90e0970a7aca7d36f95.ttf",
-    "static/media/QuattrocentoSans-Bold.ttf": "/capstone/static/media/QuattrocentoSans-Bold.7b057d60a5d6d316ce3b.ttf",
-    "static/media/QuattrocentoSans-Regular.ttf": "/capstone/static/media/QuattrocentoSans-Regular.c2e444fd4e26b791b257.ttf",
+    "main.css": "/capstone/static/css/main.84a52820.css",
+    "main.js": "/capstone/static/js/main.0a98d23b.js",
     "index.html": "/capstone/index.html",
-    "main.8e6623cf.css.map": "/capstone/static/css/main.8e6623cf.css.map",
-    "main.ae4cf271.js.map": "/capstone/static/js/main.ae4cf271.js.map"
+    "main.84a52820.css.map": "/capstone/static/css/main.84a52820.css.map",
+    "main.0a98d23b.js.map": "/capstone/static/js/main.0a98d23b.js.map"
   },
   "entrypoints": [
-    "static/css/main.8e6623cf.css",
-    "static/js/main.ae4cf271.js"
+    "static/css/main.84a52820.css",
+    "static/js/main.0a98d23b.js"
   ]
 }
