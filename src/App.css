@@ -1,50 +1,18 @@
-@font-face {
-    font-family: "Quattrocento";
-    src: url(../public/fonts/Quattrocento/Quattrocento-Regular.ttf);
+:root {
+    --navy: #000C4A;
 }
 
-@font-face {
-    font-family: "Quattrocento";
-    src: url(../public/fonts/Quattrocento/Quattrocento-Bold.ttf);
-    font-weight: bold;
-}
-
-@font-face {
-    font-family: "Quattrocento Sans";
-    src: url(../public/fonts/Quattrocento_Sans/QuattrocentoSans-Regular.ttf);
-}
-
-@font-face {
-    font-family: "Quattrocento Sans";
-    src: url(../public/fonts/Quattrocento_Sans/QuattrocentoSans-Bold.ttf);
-    font-weight: bold;
-}
-
-@font-face {
-    font-family: "Alata";
-    src: url(../public/fonts/Alata/Alata-Regular.ttf);
-}
-
-.dropdown-menu.show {
-    background-color: #E4E9FF;
-    --bs-dropdown-link-hover-bg: #ffffff; 
-    --bs-dropdown-border-color: #000C4A;
-}
-
-h1 {
-    text-align: center;
-    font-family: 'Alata';
-}
-
-body {
-    font-family:'Quattrocento';
-}
 
 
 .navbar {
-    font-family: 'Quattrocento Sans';
+    font-family: 'League Spartan';
     text-align: center;
-    font-weight: bold;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.bg-light {
+    background-color: var(--navy) !important;
 }
 
 .navbar-collapse {
@@ -52,17 +20,36 @@ body {
     align-items: center;
 }
 
-/* .nav-link {
-    color: #E4E9FF;
-} */
-
 .navbar-light {
     --bs-navbar-color: #E4E9FF;
+    --bs-navbar-hover-color: #91a5ff;
+    --bs-navbar-active-color: #91a5ff;
 }
 
+.dropdown-menu.show {
+    background-color: #E4E9FF;
+    --bs-dropdown-link-hover-bg: #ffffff; 
+    --bs-dropdown-border-color: var(--navy);
+}
 
-.bg-light {
-    background-color: #000C4A !important;
+.navbar-nav .external-link.nav-link.active {
+    color: #E4E9FF;
+}
+
+.external-link.nav-link:hover, .external-link.nav-link.active:hover {
+    color: #91a5ff;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'League Spartan';
+    font-weight: 700;
+    font-size: 65px;
+}
+
+body {
+    font-family:'League Spartan';
+    background-color: #ccd5ff;
 }
 
 @import '~bootstrap/dist/css/bootstrap.css';

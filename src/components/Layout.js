@@ -25,7 +25,10 @@ function MyNav() {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav>
               <Nav.Link as={Link} to="/">Home</Nav.Link>
-              <NavDropdown title="Services" id="basic-nav-dropdown" show={show}
+              <NavDropdown 
+                title="Services" 
+                id="basic-nav-dropdown"
+                show={show}
                 onMouseEnter={showDropdown} 
                 onMouseLeave={hideDropdown}>
                 <NavDropdown.Item as={Link} to="/services">General</NavDropdown.Item>
@@ -36,8 +39,13 @@ function MyNav() {
                 </NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
               </NavDropdown>
-              <Nav.Link as={Link} to="/ourstaff">Our Staff</Nav.Link>
-              <Nav.Link as={Link} to="/contactus">Contact Us</Nav.Link>
+              <Nav.Link 
+                className='external-link'
+                href="https://eastsidevetclinic.securevetsource.com/site/view/88459_Home.pml?retUrl=https://www.eastsideveterinary.com/%26cms" 
+                target='_blank'>Online Pharmacy</Nav.Link>
+              <Nav.Link as={Link} to="/new-pet-registration">New Pet Registration</Nav.Link>
+              <Nav.Link as={Link} to="/our-staff">Our Staff</Nav.Link>
+              <Nav.Link as={Link} to="/contact-us">Contact Us</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
