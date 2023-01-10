@@ -1,16 +1,26 @@
-
+/* #home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
 
 #covid-banner {
     text-align: center;
     background-color: #FFD978;
     margin: 1vh;
     padding: 0.2vh;
-    border: solid 1px var(--navy);
+    /* border: solid 1px var(--navy); */
     font-size: 17px;
 }
 
 #home h1 {
     margin: 5vh;
+    font-size: 75px;
+    color: var(--navy);
+    /* color: white;
+    -webkit-text-stroke: 2px var(--navy);
+    font-size: 85px; */
 }
 
 #mission-statement {
@@ -42,11 +52,77 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 4vh;
 }
 
 #description p {
     width: 65%;
     font-weight: 300;
-    line-height: 100%;
-    font-size: 1.5vw;
+    line-height: 130%;
+    font-size: 20px;
+}
+
+#my-carousel {
+    display: flex;
+    justify-content: center;
+}
+
+.carousel {
+    width: 50%;
+    background-color: var(--navy);
+    margin-bottom: 7vh;
+}
+
+.carousel-item.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--light-blue);
+    font-weight: 400;
+    font-size: 19px;
+    height: 38vh;
+}
+
+.carousel-item.active img {
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+}
+
+.carousel-item.active p {
+    max-width: 65%;
+}
+
+.carousel-item.active span {
+    font-size: 17px;
+}
+
+
+#covid-advisory {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right,var(--background)15%, #FFF59B 15%, #FFF59B 85%,var(--background) 85%);
+    font-weight: 300;
+    line-height: 130%;
+    font-size: 20px;
+    margin-bottom: 7vh;
+}
+
+#covid-advisory h2 {
+    font-weight: 600;
+    font-size: 40px;
+    margin-top: 4vh;
+}
+
+#covid-advisory p {
+    text-align: left;
+    width: 65%;
+}
+
+#covid-advisory ol {
+    text-align: left;
+    background-color: #FFD978;
+    width: 65%;
 }
