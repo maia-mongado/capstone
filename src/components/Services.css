@@ -1,0 +1,43 @@
+
+
+#services h1 {
+    margin: 5vh;
+    font-size: 50px;
+}
+
+#services p {
+    width: 65%;
+    margin: 0 auto;
+}
+
+#list-of-lists {
+    display: flex;
+    margin-top: 3vh;
+    padding-top: 3vh;
+    padding-bottom: 1vh;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #b5c1ff;
+}
+
+#services svg {
+    margin: 0 auto;
+    color: var(--navy);
+    height: 35px;
+    width: 35px;
+}
+
+#services h2 {
+    margin-top: 2vh;
+    text-align: center;
+}
+
+.service-list {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+.service-list ul {
+    font-size: 20px;
+}

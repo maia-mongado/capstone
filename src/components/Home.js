@@ -64,6 +64,7 @@ export default function Home() {
             </div>
 
         <div id="covid-advisory">
+            <br></br>
             <h2>COVID-19 Advisory</h2>
             <h3>Beginning June 15, 2021</h3>
             <p>

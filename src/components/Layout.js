@@ -33,12 +33,22 @@ function MyNav() {
                 onMouseLeave={hideDropdown}>
                 <NavDropdown.Item as={Link} to="/services">General</NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                  Another action
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to='/services/dental-care'>Dental Care</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to='/services/radiology'>Radiology (X-Rays)</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to='/services/surgery'>Surgery</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to='/services/vaccinations'>Vaccinations</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to='/services/microchipping'>Microchipping</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to='/services/nutritional-counseling'>Nutritional Counseling</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to='/services/parasite-prevention-and-control'>Parasite Prevention and Control</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to='/services/ultrasound'>Ultrasound</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to='/services/in-house-laboratory'>In-House Laboratory</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to='/services/tonometry'>Tonometry</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to='/services/wellness-exams'>Wellness Exams</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to='/services/rabbits-and-small-mammals'>Rabbits and Small Mammals</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to='/services/puppy-and-kitten-care'>Puppy and Kitten Care</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to='/services/pain-management'>Pain Management</NavDropdown.Item>
               </NavDropdown>
+
               <Nav.Link 
                 className='external-link'
                 href="https://eastsidevetclinic.securevetsource.com/site/view/88459_Home.pml?retUrl=https://www.eastsideveterinary.com/%26cms" 
