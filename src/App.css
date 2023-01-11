@@ -1,11 +1,10 @@
 :root {
     --navy: #000C4A;
     --mid-blue: #91a5ff;
-    --light-blue: #E4E9FF;
+    --light-blue: #e6eaff;
     --background: #ccd5ff;
+    --bs-dropdown-bg: #000000;
 }
-
-
 
 .navbar {
     font-family: 'League Spartan';
@@ -33,6 +32,7 @@
     background-color: var(--light-blue);
     --bs-dropdown-link-hover-bg: #ffffff; 
     --bs-dropdown-border-color: var(--navy);
+    font-size: 18px;
 }
 
 .navbar-nav .external-link.nav-link.active {
