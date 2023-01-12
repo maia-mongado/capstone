@@ -5,6 +5,8 @@
     font-size: 55px;
     color: var(--mid-blue); 
     -webkit-text-stroke: 1px var(--navy);
+    line-height: 100%;
+    padding: 0;
 }
 
 #services p {
