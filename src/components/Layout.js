@@ -28,9 +28,10 @@ function MyNav() {
               <NavDropdown 
                 title="Services" 
                 id="basic-nav-dropdown"
-                show={show}
-                onMouseEnter={showDropdown} 
-                onMouseLeave={hideDropdown}>
+                // show={show}
+                // onMouseEnter={showDropdown} 
+                // onMouseLeave={hideDropdown}
+                >
                 <NavDropdown.Item as={Link} to="/services">General</NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item as={Link} to='/services/dental-care'>Dental Care</NavDropdown.Item>

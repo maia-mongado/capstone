@@ -1,0 +1,22 @@
+.service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service h1 {
+    color: var(--mid-blue); 
+    -webkit-text-stroke: 1px var(--navy);
+    margin: 4vh;
+    font-size: 50px;
+}
+
+.service img {
+    max-width: 25%;
+    border: solid 1px var(--navy);
+}
+
+.service p {
+    width: 70%;
+    margin: 6vh 0;
+}

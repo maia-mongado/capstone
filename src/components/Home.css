@@ -16,11 +16,14 @@
 
 #home h1 {
     margin: 5vh;
-    font-size: 75px;
-    color: var(--navy);
-    /* color: white;
-    -webkit-text-stroke: 2px var(--navy);
-    font-size: 85px; */
+    font-size: 80px;
+    color: var(--mid-blue);
+    -webkit-text-stroke: 1px var(--navy);
+    /* background: -webkit-linear-gradient(0deg,#1c2f8e, #677cdb);
+    background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    /* color: white; */
+    /* font-size: 85px; */
 }
 
 #mission-statement {
@@ -46,7 +49,7 @@
 #intro-pics img {
     width: 20%;
     margin: 0vh 1vw;
-    border: solid 2px var(--navy);
+    border: solid 1px var(--navy);
 }
 
 #description {
