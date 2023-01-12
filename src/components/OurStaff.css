@@ -2,8 +2,16 @@
     text-align: center;
     /* margin-bottom: 4vh; */
     margin-bottom: 0;
-    margin-top: 3vh;
+    /* margin-top: 3vh; */
     font-size: 40px;
+}
+
+#vets h2 {
+    padding-top: 5vh;
+}
+
+#vets {
+    background-color: var(--alt-background);
 }
 
 .person {

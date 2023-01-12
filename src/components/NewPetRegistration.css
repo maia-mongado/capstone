@@ -1,0 +1,15 @@
+#blurb {
+    margin: auto;
+    text-align: center;
+}
+
+.col-2 {
+ display: flex;
+ /* width: 100%;
+ justify-content: center; */
+}
+
+.form-control {
+    background-color: rgba(255, 255, 255, 0.4);
+    /* border: 1px solid rgba(var(--navy), 1); */
+}

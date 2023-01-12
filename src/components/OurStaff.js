@@ -4,7 +4,9 @@ export default function OurStaff() {
     return (
         <div id='our-staff'>
             <h1>Our Staff</h1>
-            <h2>Veternarians</h2>
+
+            <div id='vets'>
+            <h2>Veterinarians</h2>
 
             <div className='person'>
                 <img src={process.env.PUBLIC_URL + "/images/our-staff/peter.jpg"}></img>
@@ -40,7 +42,7 @@ export default function OurStaff() {
                 </div>
             </div>
 
-            <hr></hr>
+            </div>
 
             <h2>Staff Members</h2>
 

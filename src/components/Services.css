@@ -1,6 +1,6 @@
 
 
-#services h1, #our-staff h1 {
+#services h1, #our-staff h1, #new-pet-registration h1 {
     margin: 5vh;
     font-size: 55px;
     color: var(--mid-blue); 
@@ -21,7 +21,7 @@
     padding-bottom: 1vh;
     flex-direction: row;
     justify-content: space-evenly;
-    background-color: #b5c1ff;
+    background-color: var(--alt-background);
 }
 
 #services svg {
