@@ -3,13 +3,92 @@
     text-align: center;
 }
 
-.col-2 {
- display: flex;
- /* width: 100%;
- justify-content: center; */
+h2, h3 {
+    text-align: center;
 }
 
-.form-control {
+.alt-background {
+    background-color: var(--alt-background);
+}
+
+.alt-background, #normal-background{
+    padding: 5vh 0;
+
+}
+
+form {
+    width: 65%;
+    margin: auto;
+}
+
+.form-control, .form-select {
     background-color: rgba(255, 255, 255, 0.4);
     /* border: 1px solid rgba(var(--navy), 1); */
 }
+
+.form-label, .form-check-label {
+    font-size: 18px;
+}
+
+.form-text {
+    font-size: 16px;
+}
+
+.required.form-label::after{
+    content:'*';
+    color: red;
+}
+
+.r {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+#mobile {
+    width: 35%;
+}
+
+#address {
+    width: 70%;
+}
+
+#street, #city {
+    width: 20%;
+}
+
+#state {
+    width: 2%;
+}
+
+#zipcode {
+    width: 10%;
+}
+
+#pobox {
+    width: 15%;
+    margin-left: 2vw;
+}
+
+#license {
+    width: 20%;
+}
+
+#date {
+    width: 25%;
+}
+
+.r1 > * {
+    margin-right: 3vw;
+}
+
+#pet-names {
+    width: 50%;
+}
+
+.textbox {
+    width: 40%;
+}
+
+
+

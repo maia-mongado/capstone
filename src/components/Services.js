@@ -47,7 +47,7 @@ export default function Services() {
                             <Link to='/services/wellness-exams'>Wellness exams</Link>
                         </li>
                         <li>
-                            Preventative medecine
+                            Preventative medicine
                         </li>
                         <li>
                             <Link to='/services/dental-care'>Dental care</Link>  
