@@ -1,6 +1,9 @@
+import './ContactUs.css';
 
 export default function ContactUs() {
     return (
-        <h1>ContactUs</h1>
+        <div id='contact-us'>
+            <h1>ContactUs</h1>
+        </div>
     );
 }

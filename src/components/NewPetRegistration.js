@@ -181,7 +181,7 @@ export default function NewPetRegistration() {
 
                     <Form.Group className="mb-3">
                         <Form.Label className='required'>Current Diet</Form.Label>
-                        <Form.Control className='textbox' type="textarea" />
+                        <Form.Control className='textbox' as="textarea" rows={2} />
                     </Form.Group>
 
                     <Form.Group className="mb-3">
@@ -192,7 +192,7 @@ export default function NewPetRegistration() {
 
                     <Form.Group className="mb-3">
                         <Form.Label>Current Medications</Form.Label>
-                        <Form.Control className='textbox' type="textarea" />
+                        <Form.Control className='textbox' as="textarea" rows={2} />
                     </Form.Group>
 
                     <p>Please check any symptoms you have noticed about your pet:</p>
