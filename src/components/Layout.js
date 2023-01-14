@@ -119,15 +119,15 @@ function MyFooter() {
         </div>
         <div id="location">
             <h3>Location</h3>
-            <img src={process.env.PUBLIC_URL + "/images/home/map.png"} />
+            <img src={process.env.PUBLIC_URL + "/images/home/map.png"} alt='map' />
             <p>265 Gano Street
                 <br></br>
                 Providence, RI  02906
                 <br></br>
                 <br></br>
-                <b>Phone:</b> 401-272-2345
+                <b>Phone:</b> (401) 272-2345
                 <br></br>
-                <b>Fax:</b> 401-272-1305
+                <b>Fax:</b> (401) 272-1305
             </p>
         </div>
     </div>
@@ -136,16 +136,16 @@ function MyFooter() {
     
     <div id="symbols">
         <div id="icons">
-          <a href='https://www.facebook.com/EastSideVeterinaryClinic' target='_blank'>
-            <img id="facebook" src={process.env.PUBLIC_URL +"/images/home/facebooklogo.png"} />
+          <a href='https://www.facebook.com/EastSideVeterinaryClinic' target='_blank' rel="noopener noreferrer">
+            <img id="facebook" src={process.env.PUBLIC_URL +"/images/home/facebooklogo.png"} alt='facebook' />
           </a>
-          <a href='https://www.petly.com' target='_blank'>
-            <img id="petly" src={process.env.PUBLIC_URL+ "/images/home/petly-bubble.png"} />
+          <a href='https://www.petly.com' target='_blank' rel="noopener noreferrer">
+            <img id="petly" src={process.env.PUBLIC_URL+ "/images/home/petly-bubble.png"} alt='petly' />
           </a>
         </div>
         <p><b>We accept:</b></p>
-        <img id="credit-cards" src={process.env.PUBLIC_URL + "/images/home/credit-cards.png"} />
-        <img id="insurance" src={process.env.PUBLIC_URL + "/images/home/insurance.png"} />
+        <img id="credit-cards" src={process.env.PUBLIC_URL + "/images/home/credit-cards.png"} alt='credit-cards' />
+        <img id="insurance" src={process.env.PUBLIC_URL + "/images/home/insurance.png"} alt='insurance' />
     </div>       
     </footer>
 

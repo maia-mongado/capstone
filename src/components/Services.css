@@ -1,6 +1,4 @@
-
-
-#services h1, #our-staff h1, #new-pet-registration h1 {
+#services h1, #our-staff h1, #new-pet-registration h1, #contact-us h1 {
     margin: 5vh;
     font-size: 55px;
     color: var(--mid-blue); 

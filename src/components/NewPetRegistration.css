@@ -22,7 +22,7 @@ form {
 }
 
 .form-control, .form-select {
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.534);
     /* border: 1px solid rgba(var(--navy), 1); */
 }
 
@@ -42,7 +42,6 @@ form {
 .r {
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
 }
 
 #mobile {

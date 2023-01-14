@@ -1,0 +1,49 @@
+.contact-us-alt-background {
+    background-color: var(--alt-background);
+    padding: 5vh 0;
+}
+
+#normal-hours-contact {
+    width: 70%;
+    margin: auto;
+}
+
+
+#normal-hours-contact p {
+    text-align: center;
+}
+
+#contact-form {
+    margin: 0 2vw 0 0;
+    width: 60%;
+}
+
+#contact-name {
+    width: 75%;
+}
+
+#contact-number {
+    margin: 0 2vw 0 0;
+}
+
+#emergency-contact {
+    margin-top: 5vh;
+}
+
+#contact-us h2, .contact-address {
+    text-align: center;
+}
+
+#contact-us h2 {
+    margin-bottom: 5vh;
+}
+
+.contact-row {
+    justify-content: center;
+    margin: 5vh 0;
+}
+
+.contact-row > * {
+    margin: 0 4vw;
+}
+

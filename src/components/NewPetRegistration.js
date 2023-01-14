@@ -19,8 +19,8 @@ export default function NewPetRegistration() {
             
             <div className='alt-background'>
                 <Form>
-                <h2>Personal Info</h2>
-                <Form.Text muted>* indicates a required field.</Form.Text>  
+                    <h2>Personal Info</h2>
+                    <Form.Text muted>* indicates a required field.</Form.Text>  
                     <div className='r justify-content-between'>
                         <div className='c'>
                         <Form.Label className='required'>Name</Form.Label>
@@ -35,7 +35,7 @@ export default function NewPetRegistration() {
                             <Form.Control type='email' placeholder='ex@gmail.com' />
                         </Form.Group>
 
-                        <div className='r'>
+                        <div className='r align-items-end'>
                             <Form.Group className='mb-3'>
                                 <Form.Label className='required'>Phone number</Form.Label>
                                 <Form.Control type='textarea' placeholder='#' />
@@ -47,10 +47,9 @@ export default function NewPetRegistration() {
                                 <option value="2">Work</option>
                             </Form.Select>
                         </div>
-
                     </div>
 
-                    <div className='r'>
+                    <div className='r align-items-end'>
                         <div className='c' id='address'>
                             <Form.Label className='required'>Address</Form.Label>
                             <InputGroup className='mb-3'>
@@ -102,7 +101,7 @@ export default function NewPetRegistration() {
                             <Form.Control type='email' placeholder='ex@gmail.com' />
                         </Form.Group>
 
-                        <div className='r'>
+                        <div className='r align-items-end'>
                             <Form.Group className='mb-3'>
                                 <Form.Label>Phone number</Form.Label>
                                 <Form.Control type='textarea' placeholder='#' />

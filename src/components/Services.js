@@ -21,9 +21,8 @@ export default function Services() {
                         </li>
                         <li>
                             <a 
-                            className='external-link'
                             href="https://eastsidevetclinic.securevetsource.com/site/view/88459_Home.pml?retUrl=https://www.eastsideveterinary.com/%26cms" 
-                            target='_blank'>Fully stocked pharmacy
+                            target='_blank' rel="noopener noreferrer">Fully stocked pharmacy
                             </a>
                         </li>
                         <li>

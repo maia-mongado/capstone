@@ -49,7 +49,6 @@ function App() {
           <Route path='/services/rabbits-and-small-mammals' element={<Rabbits />} />
           <Route path='/services/puppy-and-kitten-care' element={<PuppyAndKitten />} />
           <Route path='/services/pain-management' element={<PainManagement />} />
-
         </Route>
       </Routes>
     </div>
