@@ -21,7 +21,7 @@ function MyNav() {
 
 
     return(
-        <Navbar sticky="top" bg="dark" expand="sm">
+        <Navbar sticky="top" bg="dark" expand="md">
         <Container id='navbar-container'>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Brand as={Link} to="/">

@@ -109,13 +109,14 @@
 }
 
 @media (max-width: 1025px) {
+/* tablet adjustments */
     #home h1 {
         font-size: 60px;
         margin: 3vh;
     }
 
     #mission-statement, #description {
-        width: 95%;
+        width: 90%;
     }
 
     #intro-pics img {
@@ -145,8 +146,12 @@
 
 @media (max-width: 415px) {
     #home h1 {
-        font-size: 40px;
+        font-size: 45px;
         margin: 1vh;
+    }
+
+    #covid-advisory h2 {
+        font-size: 37px;
     }
 
     #mission-statement {
@@ -178,13 +183,20 @@
     }
 }
 
+@media (max-width: 375px) {
+/* carousel adjustment for iPhone 8 and iPhone SE */
+    .carousel-item.active {
+        height: 58vh;
+    }
+}
+
 @media (max-width: 321px) {
 /* font adjustment for iPhone SE */
-    #mission-statement, #description, #covid-advisory p, #covid-advisory ol {
+    /* #mission-statement, #description, #covid-advisory p, #covid-advisory ol {
         font-size: 18px;
     }
 
     #covid-advisory h2 {
         font-size: 33px;
-    }
+    } */
 }

@@ -193,6 +193,7 @@ hr {
 }
 
 @media (max-width: 1025px) {
+/* tablet adjustment */
     #location, #hours {
         width: 40%;
     }

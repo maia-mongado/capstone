@@ -43,3 +43,44 @@
 .service-list ul {
     font-size: 20px;
 }
+
+@media (max-width: 1025px) {
+/* adjusting for tablet */
+    #services p {
+        width: 90%;
+    }
+}
+
+@media (max-width: 775px) {
+/* adjusting list to be columns when screen gets small enough */
+    #list-of-lists {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-list {
+        width: 90%;
+        margin: 3vh 0;
+    }
+
+    .service-list ul {
+        width: 50%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 500px) {
+/* adjusting list width when screen gets small enough */
+    .service-list ul {
+        width: 95%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 495px) {
+/* adjusting title when it goes on two lines */
+    #services h1 {
+        font-size: 43px;
+        margin: 2.5vh;
+    }
+}
