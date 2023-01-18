@@ -13,7 +13,13 @@
     font-size: 18px;
 }
 
-.bg-light {
+#navbar-container {
+    margin: 0 0.2vw;
+    width: 100%;
+    max-width: 2000px;
+}
+
+.bg-dark {
     background-color: var(--navy) !important;
 }
 
@@ -26,6 +32,11 @@
     --bs-navbar-color: var(--light-blue);
     --bs-navbar-hover-color: var(--mid-blue);
     --bs-navbar-active-color: var(--mid-blue);
+    --bs-navbar-toggler-border-color: var(--light-blue);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 30 30%27%3e%3cpath stroke=%27rgba%28230, 234, 255, 1%29%27 stroke-linecap=%27round%27 stroke-miterlimit=%2710%27 stroke-width=%272%27 d=%27M4 7h22M4 15h22M4 23h22%27/%3e%3c/svg%3e");
 }
 
 .dropdown-menu.show {
@@ -130,9 +141,14 @@ td {
     margin-top: 2vh;
 }
 
+hr {
+    margin-bottom: 0;
+}
+
 #symbols {
     display: flex;
-    margin-left: 1vw;
+    padding: 1vh 1vw;
+    align-items: center;
 }
 
 #icons img {
@@ -149,16 +165,88 @@ td {
 #symbols p {
     margin-top: 3vh;
     margin-left: auto;
+    color: var(--light-blue);
 }
 
 #credit-cards {
-    height: 60px !important;
-    width: 240px !important;
+    margin-left: 0.5vw;
 }
 
-#insurance {
-    height: 75px !important;
-    width: 270px !important;
+#credit-cards svg {
+    width: 50px;
+    height: 50px;
+    margin: 0 0.3vw;
+    color: var(--light-blue);
+}
+
+#insurance img {
+    margin: 0 0.3vw;
+}
+
+#care-credit {
+    height: 60px;
+}
+
+#trupanion {
+    height: 45px;
+    filter: brightness(150%);
+}
+
+@media (max-width: 1025px) {
+    #location, #hours {
+        width: 40%;
+    }
+}
+
+@media (max-width: 775px) {
+/* header, location stacking */
+    #footer-info  {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #location, #hours {
+        width: 95%;
+        margin: 2vh 0; 
+    }
+
+    #hours td, #location p {
+        font-size: 19px;
+    }
+
+    #location img {
+        width: 40%;
+    }
+
+    .space {
+        width: 4vw;
+    }
+
+}
+
+@media (max-width: 720px) {
+/* symbol stacking */
+    #symbols {
+        flex-direction: column;
+    }
+
+    #symbols p {
+        margin: 3vh auto 0;
+    }
+}
+
+@media (max-width: 415px) {
+/* location image adjustment on phones vs. large tablets */
+    #location img {
+        width: 90%;
+    }
+}
+
+@media (max-width: 375px) {
+/* font adjustment for iPhone SE for footer-info */
+    #hours td, #location p {
+        font-size: 16px;
+    }
 }
 
 @import '~bootstrap/dist/css/bootstrap.css';

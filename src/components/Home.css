@@ -1,16 +1,8 @@
-/* #home {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-} */
-
 #covid-banner {
     text-align: center;
     background-color: #FFD978;
     margin: 1vh;
     padding: 0.2vh;
-    /* border: solid 1px var(--navy); */
     font-size: 17px;
 }
 
@@ -27,16 +19,11 @@
 }
 
 #mission-statement {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#mission-statement p {
+    margin: auto;
     text-align: center;
     font-weight: 400;
     font-size: 24px;
-    width: 65%;
+    width: 70%;
 }
 
 #intro-pics {
@@ -53,25 +40,19 @@
 }
 
 #description {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 4vh;
-}
-
-#description p {
-    width: 67%;
+    margin: auto;
+    width: 70%;
 }
 
 #my-carousel {
     display: flex;
     justify-content: center;
+    margin: 7vh auto;
 }
 
 .carousel {
-    width: 50%;
+    width: 55%;
     background-color: var(--navy);
-    margin-bottom: 7vh;
 }
 
 .carousel-item.active {
@@ -85,9 +66,9 @@
     height: 38vh;
 }
 
-.carousel-item.active img {
+.stars svg {
+    color: #FFD978;
     margin-bottom: 2vh;
-    margin-top: 2vh;
 }
 
 .carousel-item.active p {
@@ -125,4 +106,85 @@
     text-align: left;
     background-color: #FFD978;
     width: 65%;
+}
+
+@media (max-width: 1025px) {
+    #home h1 {
+        font-size: 60px;
+        margin: 3vh;
+    }
+
+    #mission-statement, #description {
+        width: 95%;
+    }
+
+    #intro-pics img {
+        width: 25%;
+    }
+
+    .carousel {
+        width: 90%;
+    }
+
+    .carousel-item.active {
+        height: 30vh;
+    }
+
+    .carousel-item.active p {
+        max-width: 75%;
+    }
+
+    #covid-advisory {
+        background: linear-gradient(to right,var(--background)2%, #FFF59B 2%, #FFF59B 98%,var(--background) 98%);
+    }
+
+    #covid-advisory p, #covid-advisory ol {
+        width: 90%;
+    }
+}
+
+@media (max-width: 415px) {
+    #home h1 {
+        font-size: 40px;
+        margin: 1vh;
+    }
+
+    #mission-statement {
+        font-weight: 400;
+        font-size: 21px;
+    }
+
+    #intro-pics {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    #intro-pics img {
+        width: 77%;
+        margin: 2vh 0; 
+    }
+
+    .carousel-item.active {
+        height: 40vh;
+    }
+
+    .carousel-item.active p {
+        font-size: 18px;
+    }
+    
+    .carousel-item.active span {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 321px) {
+/* font adjustment for iPhone SE */
+    #mission-statement, #description, #covid-advisory p, #covid-advisory ol {
+        font-size: 18px;
+    }
+
+    #covid-advisory h2 {
+        font-size: 33px;
+    }
 }

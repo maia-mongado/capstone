@@ -1,6 +1,7 @@
 import './Home.css'
 import Carousel from 'react-bootstrap/Carousel';
 import { HashLink } from "react-router-hash-link";
+import { AiFillStar } from 'react-icons/ai';
 
 export default function Home() {
     return (
@@ -12,50 +13,54 @@ export default function Home() {
 
             <h1>Eastside Veterinary Clinic</h1>
 
-            <div id="mission-statement">
-                <p><em><b>Our mission</b> is to provide high quality affordable veterinary medical and surgical services in a compassionate, informed environment. We strive to deliver exceptional patient care and superior client satisfaction.</em></p>
-            </div>
+            <p id='mission-statement'><em><b>Our mission</b> is to provide high quality affordable veterinary medical and surgical services in a compassionate, informed environment. We strive to deliver exceptional patient care and superior client satisfaction.</em></p>
 
             <div id="intro-pics">
                 <img src={process.env.PUBLIC_URL + "/images/home/eside1.jpeg"}></img>
                 <img src={process.env.PUBLIC_URL + "/images/home/eside2.jpeg"}></img>
             </div>
 
-            <div id="description">
-                <p>​Opened in 2000, Eastside Veterinary Clinic is a full service veterinary facility, caring for animals of the Greater Providence, Rhode Island Area. We are staffed with four highly experienced veterinarians and many compassionate, skilled veterinary technicians. In addition to providing services to the public, we partner with local shelters to promote adoption and affordable spay/neuter programs. We are able to provide both routine and specialty services. Please call to learn more about our family focused  community practice.
-                </p>
+            <p id='description'>​Opened in 2000, Eastside Veterinary Clinic is a full service veterinary facility, caring for animals of the Greater Providence, Rhode Island Area. We are staffed with four highly experienced veterinarians and many compassionate, skilled veterinary technicians. In addition to providing services to the public, we partner with local shelters to promote adoption and affordable spay/neuter programs. We are able to provide both routine and specialty services. Please call to learn more about our family focused  community practice.
+            </p>
 
-            </div>
 
             <div id='my-carousel'>
                 <Carousel interval={null}>
                     <Carousel.Item>
                         {/* <img
-                        className="w-100"
-                        src={process.env.PUBLIC_URL + '/images/home/navy-rectangle.png'}
-                        alt="First slide"
-                        />
-                        <Carousel.Caption> */}
-                        <img
                         src={process.env.PUBLIC_URL + '/images/home/Stars.png'}
-                        />
+                        /> */}
+                        <div className='stars'>
+                            <AiFillStar />
+                            <AiFillStar />
+                            <AiFillStar />
+                            <AiFillStar />
+                            <AiFillStar />
+                        </div>
                         <p>The entire staff makes us feel like family.
                         </p>
                         <span>-Elvira</span>
-                        {/* </Carousel.Caption> */}
                     </Carousel.Item>
                     <Carousel.Item>
-                        <img
-                            src={process.env.PUBLIC_URL + '/images/home/Stars.png'}
-                        />
+                        <div className='stars'>
+                            <AiFillStar />
+                            <AiFillStar />
+                            <AiFillStar />
+                            <AiFillStar />
+                            <AiFillStar />
+                        </div>
                         <p>Dr Dina is so caring and thorough and very knowledgeable! Sarah greeted me and returned Honey to me with genuine care and courtesy, Kathy is a pro receptionist with calm and proficiency all the time in person or on the phone.
                         </p>
                         <span>-Eileen</span>
                     </Carousel.Item>
                     <Carousel.Item>
-                        <img
-                            src={process.env.PUBLIC_URL + '/images/home/Stars.png'}
-                        />
+                        <div className='stars'>
+                            <AiFillStar />
+                            <AiFillStar />
+                            <AiFillStar />
+                            <AiFillStar />
+                            <AiFillStar />
+                        </div>
                         <p>We love Dr. Murphy! She is so good with us and with our elder animals. She is the best.
                         </p>
                         <span>-Anonymous</span>
