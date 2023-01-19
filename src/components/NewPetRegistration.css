@@ -1,5 +1,6 @@
 #blurb {
     margin: auto;
+    width: 90%;
     text-align: center;
 }
 
@@ -42,26 +43,27 @@ form {
 .r {
     display: flex;
     flex-direction: row;
+    align-items: flex-end;
+}
+
+.r-space > * {
+    margin-right: 2vw;
 }
 
 #mobile {
     width: 35%;
 }
 
-#address {
-    width: 70%;
-}
-
 #street, #city {
-    width: 20%;
+    width: 32.5%;
 }
 
 #state {
-    width: 2%;
+    width: 20%;
 }
 
 #zipcode {
-    width: 10%;
+    width: 15%;
 }
 
 #pobox {
@@ -77,16 +79,56 @@ form {
     width: 25%;
 }
 
-.r1 > * {
-    margin-right: 3vw;
-}
-
 #pet-names {
     width: 50%;
 }
 
 .textbox {
     width: 40%;
+}
+
+@media (max-width: 1230px) {
+    form {
+        width: 90%;
+    }
+}
+
+@media (max-width: 775px) {
+    .r {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .r > *, #street, #city, #state, #zipcode, #pobox {
+        width: 100%;
+    }
+
+    #street, #city, #state, #zipcode, #pobox {
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+    
+}
+
+@media (max-width: 500px) {
+    #new-pet-registration h1 {
+        font-size: 43px;
+        margin: 2vh;
+    }
+
+    #license, #date, #pet-names, .textbox {
+        width: 100%;
+    }
+
+    #mobile {
+        width: 50%;
+    }
+
+    .form-label, .form-check-label, .form-text {
+        font-size: 22px;
+    }
+
 }
 
 

@@ -6,6 +6,7 @@
 #normal-hours-contact {
     width: 70%;
     margin: auto;
+    align-items: flex-start;
 }
 
 
@@ -45,5 +46,38 @@
 
 .contact-row > * {
     margin: 0 4vw;
+}
+
+@media (max-width: 775px) {
+    #normal-hours-contact {
+        align-items: center;
+        width: 90%;
+    }
+
+    #contact-form, #contact-name, #contact-number {
+        margin: 0;
+        width: 100%;
+    }
+
+    #contact-us h2 {
+        margin-bottom: 0;
+        font-size: 30px;
+    }
+
+    .contact-row {
+        margin: 0;
+    }
+
+    .contact-address {
+        margin: 3vh 0;
+    }
+
+}
+
+@media (max-width: 500px) {
+    #contact-us h1 {
+        font-size: 43px;
+        margin: 2vh;
+    }
 }
 

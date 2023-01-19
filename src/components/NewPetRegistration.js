@@ -21,7 +21,7 @@ export default function NewPetRegistration() {
                 <Form>
                     <h2>Personal Info</h2>
                     <Form.Text muted>* indicates a required field.</Form.Text>  
-                    <div className='r justify-content-between'>
+                    <div className='r r-space'>
                         <div className='c'>
                         <Form.Label className='required'>Name</Form.Label>
                         <InputGroup className='mb-3' controlId='name'>
@@ -35,7 +35,7 @@ export default function NewPetRegistration() {
                             <Form.Control type='email' placeholder='ex@gmail.com' />
                         </Form.Group>
 
-                        <div className='r align-items-end'>
+                        <div className='r'>
                             <Form.Group className='mb-3'>
                                 <Form.Label className='required'>Phone number</Form.Label>
                                 <Form.Control type='textarea' placeholder='#' />
@@ -49,10 +49,10 @@ export default function NewPetRegistration() {
                         </div>
                     </div>
 
-                    <div className='r align-items-end'>
+                    <div className='r'>
                         <div className='c' id='address'>
                             <Form.Label className='required'>Address</Form.Label>
-                            <InputGroup className='mb-3'>
+                            <Form.Group className='mb-3 r'>
                                 <Form.Control type="text" placeholder="Street" id='street' />
                                 <Form.Control type="text" placeholder="City"
                                 id='city' />
@@ -60,7 +60,7 @@ export default function NewPetRegistration() {
                                 id='state'/>
                                 <Form.Control type="text" placeholder="Zipcode"
                                 id='zipcode' />
-                            </InputGroup>
+                            </Form.Group>
                         </div>
 
                         <Form.Group className="mb-3" id="pobox">
@@ -87,7 +87,7 @@ export default function NewPetRegistration() {
 
                     <h4>Alternate Contact</h4>
 
-                    <div className='r justify-content-between'>
+                    <div className='r r-space'>
                         <div className='c'>
                             <Form.Label>Name</Form.Label>
                             <InputGroup className='mb-3' controlId='name'>
@@ -101,7 +101,7 @@ export default function NewPetRegistration() {
                             <Form.Control type='email' placeholder='ex@gmail.com' />
                         </Form.Group>
 
-                        <div className='r align-items-end'>
+                        <div className='r'>
                             <Form.Group className='mb-3'>
                                 <Form.Label>Phone number</Form.Label>
                                 <Form.Control type='textarea' placeholder='#' />
@@ -124,7 +124,7 @@ export default function NewPetRegistration() {
 
                     <h2 id='pet-info-header'>Pet Info</h2>
 
-                    <div className='r r1'>
+                    <div className='r r-space'>
                         <Form.Group className='mb-3'>
                             <Form.Label className='required'>Pet Name</Form.Label>
                             <Form.Control type='text' />
@@ -146,7 +146,7 @@ export default function NewPetRegistration() {
                     </Form.Group>
                     </div>
 
-                    <div className='r r1'>
+                    <div className='r r-space'>
                         <Form.Group className='mb-3'>
                             <Form.Label className='required'>Species</Form.Label>
                             <Form.Select>
@@ -195,7 +195,7 @@ export default function NewPetRegistration() {
                     </Form.Group>
 
                     <p>Please check any symptoms you have noticed about your pet:</p>
-                    <div className='r r1'>
+                    <div className='r'>
                         <Form.Group className="mb-3" controlId="formBasicCheckbox">
                             <Form.Check type="checkbox" label="Behavior problems" />
                             <Form.Check type="checkbox" label="Bleeding gums" />
@@ -240,7 +240,7 @@ export default function NewPetRegistration() {
                 <h2>Authorization</h2>
                 <p>I hereby authorize the veterinarian to examine, prescribe for, or treat the above described pet. I assume responsibility for all charges incurred in the care of this animal. If also understand that these charges will be paid at the time of release and that a deposit may be required for surgical treatment.</p>
 
-                <div className='r r1'>
+                <div className='r r-space'>
                     <div className='c'>
                         <Form.Label className='required'>Name</Form.Label>
                         <InputGroup className='mb-3' controlId='name'>

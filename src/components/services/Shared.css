@@ -12,11 +12,41 @@
 }
 
 .service img {
-    max-width: 25%;
+    width: 25%;
     border: solid 1px var(--navy);
 }
 
 .service p {
     width: 70%;
     margin: 6vh 0;
+}
+
+@media (max-width: 1025px) {
+/*changing margins for tablet*/
+    .service p {
+        width: 90%;
+    }
+}
+
+@media (max-width: 600px) {
+/*changing images when they get awkwardly small*/
+    .service img {
+        width: 50%;
+    }
+}
+
+@media (max-width: 415px) {
+    /*iPhone 8 plus*/
+        .service h1 {
+            font-size: 42px;
+            margin: 2vh auto;
+        }
+        .service img {
+            width: 65%;
+            margin: 1vh auto;
+        }
+
+        .service p {
+            margin: 3vh 0;
+        }
 }
