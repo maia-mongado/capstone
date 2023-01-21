@@ -110,7 +110,7 @@ export default function Home() {
                 <br></br>
                 If you are in need of medications or supplies for your pet, we will continue to bring everything out to you!
                 <br></br>
-                For more info on vet clinics during this pandemic, see our <a href='#'>infographic</a>.
+                For more info on vet clinics during this pandemic, see our <a href='https://www.petvets.com/blog/wp-content/uploads/2021/06/Busy_Veterinarians.jpg' target='_blank' rel='noopener'>infographic</a>.
                 <br></br>
                 <br></br>
                 ​We thank you for your understanding and cooperation in our joint effort to keep our community healthy.

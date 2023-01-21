@@ -1,73 +1,81 @@
-
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
-import React from "react";
+import { useState }from "react";
 import { Link, Outlet } from "react-router-dom";
 
 import {FaCcMastercard, FaCcVisa, FaCcAmex, FaCcDiscover } from 'react-icons/fa';
 
 function MyNav() {
-    const [show, setShow] = React.useState(false);
-
-    const showDropdown = (e)=>{
-        setShow(!show);
-    }
-    const hideDropdown = e => {
-        setShow(false);
-    }
-
+    const [expanded, setExpanded] = useState(false);
 
     return(
-        <Navbar sticky="top" bg="dark" expand="md">
+        <Navbar sticky="top" bg="dark" expand="md" expanded={expanded}>
         <Container id='navbar-container'>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Toggle aria-controls="basic-navbar-nav" 
+          onClick={() => setExpanded(expanded ? false : "expanded")}/>
           <Navbar.Brand as={Link} to="/">
             <img
               src={process.env.PUBLIC_URL + "/images/home/image.png"}
-              width="40"
-              height="40"
+              width="45"
+              height="45"
               className="d-inline-block align-top"
               alt="React Bootstrap logo"
             />
         </Navbar.Brand>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav>
-              <Nav.Link as={Link} to="/">Home</Nav.Link>
+              <Nav.Link as={Link} to="/"
+               onClick={() => setExpanded(false)}>Home</Nav.Link>
               <NavDropdown 
                 title="Services" 
                 id="basic-nav-dropdown"
-                // show={show}
-                // onMouseEnter={showDropdown} 
-                // onMouseLeave={hideDropdown}
                 >
-                <NavDropdown.Item as={Link} to="/services">General</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/services"
+                 onClick={() => setExpanded(false)}>General</NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item as={Link} to='/services/dental-care'>Dental Care</NavDropdown.Item>
-                <NavDropdown.Item as={Link} to='/services/radiology'>Radiology (X-Rays)</NavDropdown.Item>
-                <NavDropdown.Item as={Link} to='/services/surgery'>Surgery</NavDropdown.Item>
-                <NavDropdown.Item as={Link} to='/services/vaccinations'>Vaccinations</NavDropdown.Item>
-                <NavDropdown.Item as={Link} to='/services/microchipping'>Microchipping</NavDropdown.Item>
-                <NavDropdown.Item as={Link} to='/services/nutritional-counseling'>Nutritional Counseling</NavDropdown.Item>
-                <NavDropdown.Item as={Link} to='/services/parasite-prevention-and-control'>Parasite Prevention and Control</NavDropdown.Item>
-                <NavDropdown.Item as={Link} to='/services/ultrasound'>Ultrasound</NavDropdown.Item>
-                <NavDropdown.Item as={Link} to='/services/in-house-laboratory'>In-House Laboratory</NavDropdown.Item>
-                <NavDropdown.Item as={Link} to='/services/tonometry'>Tonometry</NavDropdown.Item>
-                <NavDropdown.Item as={Link} to='/services/wellness-exams'>Wellness Exams</NavDropdown.Item>
-                <NavDropdown.Item as={Link} to='/services/rabbits-and-small-mammals'>Rabbits and Small Mammals</NavDropdown.Item>
-                <NavDropdown.Item as={Link} to='/services/puppy-and-kitten-care'>Puppy and Kitten Care</NavDropdown.Item>
-                <NavDropdown.Item as={Link} to='/services/pain-management'>Pain Management</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to='/services/dental-care'
+                 onClick={() => setExpanded(false)}>Dental Care</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to='/services/radiology'
+                 onClick={() => setExpanded(false)}>Radiology (X-Rays)</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to='/services/surgery'
+                 onClick={() => setExpanded(false)}>Surgery</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to='/services/vaccinations'
+                 onClick={() => setExpanded(false)}>Vaccinations</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to='/services/microchipping'
+                 onClick={() => setExpanded(false)}>Microchipping</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to='/services/nutritional-counseling'
+                 onClick={() => setExpanded(false)}>Nutritional Counseling</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to='/services/parasite-prevention-and-control'
+                 onClick={() => setExpanded(false)}>Parasite Prevention and Control</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to='/services/ultrasound'
+                 onClick={() => setExpanded(false)}>Ultrasound</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to='/services/in-house-laboratory'
+                 onClick={() => setExpanded(false)}>In-House Laboratory</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to='/services/tonometry'
+                 onClick={() => setExpanded(false)}>Tonometry</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to='/services/wellness-exams'
+                 onClick={() => setExpanded(false)}>Wellness Exams</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to='/services/rabbits-and-small-mammals'
+                 onClick={() => setExpanded(false)}>Rabbits and Small Mammals</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to='/services/puppy-and-kitten-care'
+                 onClick={() => setExpanded(false)}>Puppy and Kitten Care</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to='/services/pain-management'
+                 onClick={() => setExpanded(false)}>Pain Management</NavDropdown.Item>
               </NavDropdown>
 
               <Nav.Link 
                 className='external-link'
                 href="https://eastsidevetclinic.securevetsource.com/site/view/88459_Home.pml?retUrl=https://www.eastsideveterinary.com/%26cms" 
                 target='_blank'>Online Pharmacy</Nav.Link>
-              <Nav.Link as={Link} to="/new-pet-registration">New Pet Registration</Nav.Link>
-              <Nav.Link as={Link} to="/our-staff">Our Staff</Nav.Link>
-              <Nav.Link as={Link} to="/contact-us">Contact Us</Nav.Link>
+              <Nav.Link as={Link} to="/new-pet-registration"
+               onClick={() => setExpanded(false)}>New Pet Registration</Nav.Link>
+              <Nav.Link as={Link} to="/our-staff"
+               onClick={() => setExpanded(false)}>Our Staff</Nav.Link>
+              <Nav.Link as={Link} to="/contact-us"
+               onClick={() => setExpanded(false)}>Contact Us</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

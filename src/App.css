@@ -33,6 +33,7 @@
     --bs-navbar-hover-color: var(--mid-blue);
     --bs-navbar-active-color: var(--mid-blue);
     --bs-navbar-toggler-border-color: var(--light-blue);
+    padding: 0.5vh 0;
 }
 
 .navbar-toggler-icon {
